@@ -86,16 +86,23 @@ nav ul {
     flex-grow: 2;
     margin: 0;
     padding: 0;
+    
 }
+
 
 nav li {
     padding: 0 10px;
+    
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    border-radius: 12px;
+    border-width: 3px;
+    
+    padding: 2px;
 }
 
 nav a:hover {
@@ -109,6 +116,7 @@ nav a:hover {
     border-radius: 5px;
     outline: none;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 main {
@@ -215,6 +223,10 @@ aside {
 
 aside.expanded {
     transform: translateX(0);
+}
+
+nav a.active, nav a:hover {
+    text-decoration: underline;
 }
 
 .modal {
