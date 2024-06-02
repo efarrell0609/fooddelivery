@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="https://via.placeholder.com/200x200?text=Logo" class="logo"> <!-- Ensure you have 'logo.png' in your project directory -->
+            <h1>Company Name</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Food Delivery</a></li>
+                <li><a href="/new-releases">New Releases</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/locations">Locations</a></li>
+                <li><a href="/account">Account</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search for food...">
+    </header>
+
+    <main>
+        <section id="food-list">
+            <!-- Food items will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <button id="toggle-cart" class="toggle-cart">Cart</button>
+    <aside id="cart-aside">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </ul>
+        <p id="total-price">Total: $0.00</p>
+        <button id="checkout">Checkout</button>
+        <button id="empty-cart">Empty Cart</button>
+    </aside>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Payment Method</h2>
+            <p id="final-total-price">Total: $0.00</p>
+            <form id="payment-form">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
