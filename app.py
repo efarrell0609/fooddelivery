@@ -5,6 +5,14 @@ from flask_cors import CORS  # Import CORS
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all domains on all routes
 
+def get_db_connection():
+    connection = mysql.connector.connect(
+        host='localhost',
+        user='root',
+        password='Zarnx200+',
+        database='fooddelivery'
+    )
+    return connection
 
 @app.route('/api/food')
 def get_food_items():
